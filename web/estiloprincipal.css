@@ -1,0 +1,186 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/01/2018, 10:54:30 AM
+    Author     : Adrián Alejandro
+*/
+
+/* Esto hace que los elementos lleguen a los extremos*/
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Esta sección posiciona la imagen detrás del texto y centra el título*/
+.banner{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.titulo{
+    position: absolute;
+    font-size: 45px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Esta sección recorta la imagen del banner*/
+.recortar{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.recortar img{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px 0 0 50px;
+}
+
+/*Configuración menú de navegación*/
+
+.menuNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: burlywood;
+	
+}
+
+.menuNav li {
+    float: left;
+    background-color: burlywood;
+}
+
+.menuNav li.alignRight{
+    float: right;
+}
+
+.menuNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menuNav li a:hover {
+    background-color: #111;
+}
+
+#BuscadorB td{
+    padding: 14px 16px;
+    border: 0;
+}
+/*Botón submit*/
+#botonBuscar{
+    width: 20px;
+    border: 0;
+    float: right;
+}
+
+/*Lista artículos*/
+.container{
+    background-color: azure;
+    margin-left: 30%;
+}
+
+.vistaPrevia{
+    width: 150px;
+}
+
+/*Configuración de la pantalla de inicio de sesión*/
+	
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+    }
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+	
+/*Configuración de la pantalla de edición de artículos*/
+
+    .modal2 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 70rem;
+        border-radius: 0.5rem;
+    }
+    .close-button2 {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button2:hover {
+        background-color: darkgray;
+    }
+    .show-modal2 {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+    
+    

@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/03/2018, 09:40:27 PM
+    Author     : Adrián Alejandro
+*/
+
+/*Configuración en general del cuerpo del documento*/
+html body{
+    background-color:#DDB267;
+}
+
+/*Posicionamiento del DIV de contenido*/
+.contenidoP{
+    text-align: center;
+    background-color:burlywood;
+    width: 1000px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*Configuración de la posición de la tabla de contenidos*/
+.contenidoP table{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/*Esto corta las descripciones*/
+.snippet p{
+    width: 700px;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+/*Configuración de donde dice 'titulo' '"*/
+.barraUNO{
+    background-color: grey;
+    font-size: 15px;
+    height: 30px;
+}
+
+/*Configuración de los snipets*/
+.snippet{
+    background-color:bisque;
+}
+
+/*Configuración de la imagen*/
+.snippet img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*Configuración del área alrededor de la imagen*/
+.fondoImagen{
+    width: 100px;
+    height: 95px;
+    position: absolute;
+}
+
+/*Configuración de la pantalla de edición de artículos*/
+
+    .modal3 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 70rem;
+        border-radius: 0.5rem;
+    }
+    .close-button3 {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button3:hover {
+        background-color: darkgray;
+    }
+    .show-modal3 {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
